@@ -27,3 +27,17 @@ Open 'http://127.0.0.1:2592' in browser to monitor robot status.
 Start pybot with debuger, It's puased at the keyword name like "set*" (e.g. set varaible). 
 
 = Configure debuger with setting file =
+RDB supports save the breakpoint list in setting file. and pause the test case 
+at any one of breakpoints.
+
+{{{
+D:\>pybot --listener "rdb.Listener:test.rdb" "Demo.html"
+}}}
+
+It's loading the debuger setting from test.rdb file. Note: the file extension name need ".rdb".
+
+==Setting items in the rdb file:==
+  * BPS_LIST --
+  * WATCHING_LIST --
+  * LOGGING_FILE --
+  * WEB_PORT --
