@@ -37,7 +37,16 @@ D:\>pybot --listener "rdb.Listener:test.rdb" "Demo.html"
 It's loading the debuger setting from test.rdb file. Note: the file extension name need ".rdb".
 
 ==Setting items in the rdb file:==
-  * BPS_LIST --
-  * WATCHING_LIST --
+  * BPS_LIST -- the breakpoint list.
+  * WATCHING_LIST -- variable watching list
   * LOGGING_FILE --
-  * WEB_PORT --
+  * WEB_PORT -- web debug port.
+
+Example:
+{{{
+BPS_LIST=Log
+BPS_LIST=Connect to host
+WATCHING_LIST=${var1}
+WATCHING_LIST=${var2}
+WEB_PORT=8080
+}}}
