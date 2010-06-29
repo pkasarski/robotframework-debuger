@@ -8,7 +8,7 @@ RDB is a debuger of robotframework, It's implemented with RF listener. It suppor
 RDB runs on Python >=2.5. It's not tested on other python version.
 
 ==Robot Framework==
-RDB is works with RobotFramework 2.1.x. RDB does not yet check on RF2.5. 
+RDB is works with RobotFramework >= 2.1.
 
 = Run pybot with debuger =
 RDB is a listener of robot. It's can startup with "--listener" parameter in pybot. the listener is accepted a breakpoint as parameter. e.g. 
